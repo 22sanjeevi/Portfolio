@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjeevi Gopalakrishnan | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader-text">&lt; Sanjeevi /&gt;</div>
+      <div class="loader-bar"></div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <div class="bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="logo">&lt;Sanjeevi /&gt;</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Credentials</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li class="theme-switch-wrapper">
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-sun" id="theme-icon"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="greeting fade-in-up">Hello, I'm</p>
+          <h1 class="name fade-in-up">Sanjeevi Gopalakrishnan</h1>
+          <div class="typing-container fade-in-up">
+            <span class="static-text">I am a </span>
+            <span class="dynamic-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p class="description fade-in-up">
+            Building reliable and scalable digital solutions with Flutter and
+            the MERN stack.
+          </p>
+
+          <div class="cta-buttons fade-in-up">
+            <a href="#projects" class="hud-btn primary-glow">
+              <span class="hud-icon"><i class="fas fa-code"></i></span>
+              <span class="hud-text">View Work</span>
+            </a>
+
+            <a href="resume.pdf" target="_blank" class="hud-btn glass-glow">
+              <span class="hud-icon"><i class="fas fa-file-download"></i></span>
+              <span class="hud-text">Resume</span>
+            </a>
+
+            <a href="#contact" class="hud-btn secondary-glow">
+              <span class="hud-icon"><i class="fas fa-paper-plane"></i></span>
+              <span class="hud-text">Contact</span>
+            </a>
+          </div>
+
+          <div class="socials fade-in-up">
+            <a href="https://github.com/Sanjeevi18" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/sanjeevi-g-969bb2224/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="email-trigger"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="hero-image fade-in-up">
+          <div class="canvas-wrapper">
+            <canvas id="tech-canvas"></canvas>
+            <img src="profile.jpg" alt="Sanjeevi" class="profile-img" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-dashboard">
+        <div class="dashboard-card spotlight profile-stat-card">
+          <div class="stat-content">
+            <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Current Focus</h3>
+            <p>App Development</p>
+          </div>
+          <div class="stat-content">
+            <div class="stat-icon"><i class="fas fa-university"></i></div>
+            <h3>Education</h3>
+            <p>MCA Student</p>
+          </div>
+          <div class="stat-content">
+            <div class="stat-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Based In</h3>
+            <p>Tiruppur, India</p>
+          </div>
+        </div>
+        <div class="dashboard-card spotlight terminal-bio">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">bio.js</span>
+          </div>
+          <div class="terminal-body">
+            <p>
+              <span class="keyword">const</span>
+              <span class="var">sanjeevi</span> = {
+            </p>
+            <p class="indent">
+              <span class="key">role:</span>
+              <span class="string">"Full Stack Developer"</span>,
+            </p>
+            <p class="indent">
+              <span class="key">education:</span>
+              <span class="string">"Kongu Engineering College"</span>,
+            </p>
+            <p class="indent">
+              <span class="key">mission:</span>
+              <span class="string">"Build scalable digital solutions"</span>,
+            </p>
+            <p class="indent">
+              <span class="key">traits:</span> [<span class="string"
+                >"Quick Learner"</span
+              >, <span class="string">"Problem Solver"</span>]
+            </p>
+            <p>};</p>
+          </div>
+        </div>
+        <div class="dashboard-card spotlight education-circuit">
+          <h3><i class="fas fa-graduation-cap"></i> Academic Log</h3>
+          <div class="circuit-item">
+            <div class="circuit-point"></div>
+            <div class="circuit-content">
+              <span class="circuit-year">2024 - 2026</span>
+              <h4>Master of Computer Applications</h4>
+              <p>
+                Kongu Engineering College |
+                <span class="highlight">CGPA: 7.29</span>
+              </p>
+            </div>
+          </div>
+          <div class="circuit-line"></div>
+          <div class="circuit-item">
+            <div class="circuit-point"></div>
+            <div class="circuit-content">
+              <span class="circuit-year">2021 - 2024</span>
+              <h4>Bachelor of Computer Applications</h4>
+              <p>
+                Nandha Arts and Science College |
+                <span class="highlight">72.80%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid-container">
+        <div class="skills-grid-track" id="skills-track-1">
+          <!-- Skills will be populated by script.js -->
+        </div>
+        <div class="skills-grid-track" id="skills-track-2">
+          <!-- Skills will be populated by script.js -->
+        </div>
+        <div class="skills-grid-track" id="skills-track-3">
+          <!-- Skills will be populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Deployment History</h2>
+      <div class="mainframe-container">
+        <div class="mainframe-card spotlight active-job">
+          <div class="status-indicator">
+            <div class="status-light green pulse"></div>
+            <span class="status-text">ONLINE // PRESENT</span>
+          </div>
+          <div class="job-details">
+            <div class="job-header">
+              <h3>Flutter Developer</h3>
+              <h4><i class="fas fa-building"></i> Coreverse Technologies</h4>
+            </div>
+            <p>
+              Developing high-performance cross-platform mobile applications
+              using Flutter and Firebase. Focusing on real-time data sync and
+              architecture optimization.
+            </p>
+          </div>
+          <div class="job-year">2025</div>
+        </div>
+        <div class="mainframe-card spotlight archived-job">
+          <div class="status-indicator">
+            <div class="status-light yellow"></div>
+            <span class="status-text">ARCHIVED // INTERNSHIP</span>
+          </div>
+          <div class="job-details">
+            <div class="job-header">
+              <h3>Team Lead & Developer</h3>
+              <h4><i class="fas fa-building"></i> Lights Inc</h4>
+            </div>
+            <p>
+              Led the full development lifecycle of a finance portfolio
+              platform. Managed system architecture, implemented the MERN stack
+              backend, and handled deployment.
+            </p>
+          </div>
+          <div class="job-year">2025</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="desktop-grid-container desktop-only">
+        <div class="parallax-grid">
+          <div class="parallax-card spotlight">
+            <span class="project-index">01</span>
+            <div class="card-bg-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>LigthsOn</h3>
+                <p class="project-desc">
+                  Smart financial tracking system. <br /><strong
+                    style="color: var(--success)"
+                    >Role: Team Lead</strong
+                  >
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>React Native</span><span>Node.js</span
+                  ><span>MongoDB</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">02</span>
+            <div class="card-bg-icon"><i class="fas fa-book-open"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>Homework Manager</h3>
+                <p class="project-desc">
+                  Academic task organizer with real-time sync and interactive
+                  tasks.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>Flutter</span><span>Firebase</span><span>GetX</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Details <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">03</span>
+            <div class="card-bg-icon"><i class="fas fa-plane"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>Tourism System</h3>
+                <p class="project-desc">
+                  Dynamic tourism platform with package browsing and booking.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>PHP</span><span>MySQL</span><span>JS</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Code <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">04</span>
+            <div class="card-bg-icon"><i class="fab fa-android"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>Attendance System</h3>
+                <p class="project-desc">
+                  GPS-based attendance app. <br /><strong
+                    style="color: var(--success)"
+                    >Role: Team Lead</strong
+                  >
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>Flutter</span><span>Firebase</span>
+                </div>
+                <a
+                  href="https://github.com/Sanjeevi18"
+                  target="_blank"
+                  class="project-btn"
+                  >View Code <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">05</span>
+            <div class="card-bg-icon"><i class="fas fa-comments"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>Web Communication Tool</h3>
+                <p class="project-desc">
+                  Real-time chat app with authentication, group/private chat,
+                  and online status.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>MERN Stack</span><span>Socket.io</span
+                  ><span>Authentication</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Code <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">06</span>
+            <div class="card-bg-icon">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>Cloth Weight Billing App</h3>
+                <p class="project-desc">
+                  Precision billing app using gram-level calculations for
+                  accuracy.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>Flutter</span><span>GetX</span><span>Firebase</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Code <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">07</span>
+            <div class="card-bg-icon"><i class="fas fa-brain"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>NEUROCINEMATICS</h3>
+                <p class="project-desc">
+                  Impact of Movie Genres on Mood Using ML models for wellness
+                  applications.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>Machine Learning</span><span>Random Forest</span
+                  ><span>XGBoost</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Code <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-card spotlight">
+            <span class="project-index">09</span>
+            <div class="card-bg-icon"><i class="fas fa-tasks"></i></div>
+            <div class="card-content">
+              <div class="card-top">
+                <h3>Homework Manager Pro</h3>
+                <p class="project-desc">
+                  Comprehensive Flutter app for students to organize, track, and
+                  manage academic assignments with Google authentication.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="tags">
+                  <span>Flutter</span><span>Firebase</span><span>GetX</span
+                  ><span>Google Auth</span>
+                </div>
+                <a href="#" class="project-btn"
+                  >View Code <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mobile-project-marquee mobile-only"
+        id="mobile-project-scroll"
+      >
+        <div class="marquee-track">
+          <div class="mobile-project-card">
+            <span class="project-index">01</span>
+            <div class="card-bg-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="mp-content">
+              <h3>LigthsOn</h3>
+              <p>
+                Smart financial tracking system.
+                <span style="color: var(--success)">Role: Team Lead</span>
+              </p>
+              <div class="mp-tags">
+                <span>React Native</span><span>Node.js</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Details <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">02</span>
+            <div class="card-bg-icon"><i class="fas fa-book-open"></i></div>
+            <div class="mp-content">
+              <h3>Homework Manager</h3>
+              <p>Academic task organizer with real-time sync.</p>
+              <div class="mp-tags">
+                <span>Flutter</span><span>Firebase</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Details <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">03</span>
+            <div class="card-bg-icon"><i class="fas fa-plane"></i></div>
+            <div class="mp-content">
+              <h3>Tourism System</h3>
+              <p>Dynamic tourism platform with package browsing.</p>
+              <div class="mp-tags"><span>PHP</span><span>MySQL</span></div>
+              <a href="#" class="mp-btn"
+                >View Code <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">04</span>
+            <div class="card-bg-icon"><i class="fab fa-android"></i></div>
+            <div class="mp-content">
+              <h3>Attendance System</h3>
+              <p>GPS-based attendance app.</p>
+              <div class="mp-tags">
+                <span>Flutter</span><span>Firebase</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Code <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">05</span>
+            <div class="card-bg-icon"><i class="fas fa-comments"></i></div>
+            <div class="mp-content">
+              <h3>Web Communication Tool</h3>
+              <p>
+                Real-time chat app with authentication and group/private chat.
+              </p>
+              <div class="mp-tags">
+                <span>MERN Stack</span><span>Socket.io</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Code <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">06</span>
+            <div class="card-bg-icon">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <div class="mp-content">
+              <h3>Cloth Weight Billing App</h3>
+              <p>
+                Precision billing app using gram-level calculations for
+                accuracy.
+              </p>
+              <div class="mp-tags">
+                <span>Flutter</span><span>GetX</span><span>Firebase</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Code <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">07</span>
+            <div class="card-bg-icon"><i class="fas fa-brain"></i></div>
+            <div class="mp-content">
+              <h3>NEUROCINEMATICS</h3>
+              <p>
+                Impact of Movie Genres on Mood Using ML models for wellness
+                applications.
+              </p>
+              <div class="mp-tags">
+                <span>Machine Learning</span><span>Random Forest</span
+                ><span>XGBoost</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Code <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="mobile-project-card">
+            <span class="project-index">09</span>
+            <div class="card-bg-icon"><i class="fas fa-tasks"></i></div>
+            <div class="mp-content">
+              <h3>Homework Manager Pro</h3>
+              <p>
+                Comprehensive Flutter app for students to organize, track, and
+                manage academic assignments.
+              </p>
+              <div class="mp-tags">
+                <span>Flutter</span><span>Firebase</span><span>GetX</span
+                ><span>Google Auth</span>
+              </div>
+              <a href="#" class="mp-btn"
+                >View Code <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <h2 class="section-title">Credentials</h2>
+      <div class="credentials-container">
+        <div class="credentials-track">
+          <div class="cert-card spotlight">
+            <span class="project-index">01</span>
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <div class="cert-content">
+              <div class="cert-info">
+                <h3>Web Development Internship</h3>
+                <h4>CodSoft</h4>
+                <span class="cert-date">Feb 2025 - Mar 2025</span>
+                <p>Completed 3 web projects including an Image Gallery.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card spotlight">
+            <span class="project-index">02</span>
+            <div class="cert-icon"><i class="fab fa-python"></i></div>
+            <div class="cert-content">
+              <div class="cert-info">
+                <h3>Python and Trends</h3>
+                <h4>Brainery Spot Technology</h4>
+                <span class="cert-date">10-Day Workshop</span>
+                <p>Intensive workshop covering modern Python trends.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card spotlight">
+            <span class="project-index">03</span>
+            <div class="cert-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="cert-content">
+              <div class="cert-info">
+                <h3>Employability Training</h3>
+                <h4>RND SOFTECH</h4>
+                <span class="cert-date">2-Day Training</span>
+                <p>Professional development and soft skills training.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card spotlight">
+            <span class="project-index">04</span>
+            <div class="cert-icon"><i class="fas fa-desktop"></i></div>
+            <div class="cert-content">
+              <div class="cert-info">
+                <h3>Diploma in Computer Applications</h3>
+                <h4>DCA</h4>
+                <span class="cert-date">2-Month Course</span>
+                <p>Comprehensive course on computer fundamentals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card spotlight">
+            <span class="project-index">01</span>
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <div class="cert-content">
+              <div class="cert-info">
+                <h3>Web Development Internship</h3>
+                <h4>CodSoft</h4>
+                <span class="cert-date">Feb 2025 - Mar 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="cert-card spotlight">
+            <span class="project-index">02</span>
+            <div class="cert-icon"><i class="fab fa-python"></i></div>
+            <div class="cert-content">
+              <div class="cert-info">
+                <h3>Python and Trends</h3>
+                <h4>Brainery Spot Technology</h4>
+                <span class="cert-date">10-Day Workshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Initialize Link</h2>
+      <div class="holo-container">
+        <div class="holo-card spotlight">
+          <div class="scanline"></div>
+          <div class="holo-header">
+            <div class="status-badge online">
+              <span class="pulse"></span> System Online
+            </div>
+            <div class="availability-text">Available for new opportunities</div>
+          </div>
+          <div class="holo-body">
+            <h3>Ready to Collaborate?</h3>
+            <p>
+              Initiate a connection protocol to discuss projects, freelance
+              work, or just to say hello. My inbox is always listening.
+            </p>
+            <button class="transmit-btn" id="open-modal-btn">
+              <i class="fas fa-satellite-dish"></i> Transmit Message
+            </button>
+          </div>
+          <div class="connection-grid">
+            <a href="#" class="conn-node email-trigger">
+              <div class="node-icon"><i class="fas fa-envelope"></i></div>
+              <span>Email</span>
+            </a>
+            <a href="tel:+918248658049" class="conn-node">
+              <div class="node-icon"><i class="fas fa-phone"></i></div>
+              <span>Phone</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/sanjeevi-g-969bb2224/"
+              target="_blank"
+              class="conn-node"
+            >
+              <div class="node-icon"><i class="fab fa-linkedin-in"></i></div>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/Sanjeevi18"
+              target="_blank"
+              class="conn-node"
+            >
+              <div class="node-icon"><i class="fab fa-github-alt"></i></div>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="email-modal" class="modal-overlay">
+      <div class="modal-content holo-card">
+        <div class="modal-header">
+          <h3><i class="fas fa-terminal"></i> Compose Transmission</h3>
+          <span class="close-modal">&times;</span>
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <label>Identity / Name</label>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Contact Frequency / Email</label>
+            <input
+              type="email"
+              name="reply_to"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Project / Inquiry"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Message Data</label>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Type your message sequence here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary">
+            Send Transmission <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">&lt;Sanjeevi /&gt;</div>
+          <p class="footer-description">
+            Building reliable and scalable digital solutions with Flutter and
+            the MERN stack. Passionate about creating innovative applications
+            that solve real-world problems.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://github.com/Sanjeevi18"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/sanjeevi-g-969bb2224/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="email-trigger" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+918248658049" aria-label="Phone">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Credentials</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>Available via contact form</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 8248658049</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Tiruppur, India</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-code"></i>
+            <span>Open for opportunities</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Designed & Built by Sanjeevi Gopalakrishnan © 2025 | Crafted with
+          passion and precision
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
